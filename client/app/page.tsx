@@ -17,7 +17,7 @@ export default function Home() {
   
   // Create a runtime with initial messages based on resume data
   const runtime = useChatRuntime({ 
-    api: "http://localhost:3000/api/resume-feedback",
+    api: "https://resumereviewagent-1.onrender.com/api/resume-feedback",
     initialMessages: resumeData ? [
       {
         role: "user",
