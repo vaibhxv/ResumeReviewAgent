@@ -52,7 +52,7 @@ export function ResumeUploader({ onUpload }: ResumeUploaderProps) {
     formData.append("resume", file);
 
     try {
-      const response = await fetch("http://localhost:3000/api/analyze-resume", {
+      const response = await fetch("https://resumereviewagent-1.onrender.com/api/analyze-resume", {
         method: "POST",
         body: formData,
       });
